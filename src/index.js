@@ -7,12 +7,15 @@ export const Div = ({ children, ...style }) =>
 export const Span = ({ children, ...style }) =>
   <span className={cxs(style)}>{children}</span>;
 
+export const A = ({ children, href, target, ...style }) =>
+  <a href={href} target={target} className={cxs(style)}>{children}</a>;
+
 export const FlexRow = ({ children, ...style }) =>
-  <span className={cxs({ ...style, display: "flex", flexDirection: "row" })}>
+  <div className={cxs({ ...style, display: "flex", flexDirection: "row" })}>
     {children}
-  </span>;
+  </div>;
 
 export const FlexColumn = ({ children, ...style }) =>
-  <span className={cxs({ ...style, display: "flex", flexDirection: "column" })}>
+  <div className={cxs({ ...style, display: "flex", flexDirection: "column" })}>
     {children}
-  </span>;
+  </div>;

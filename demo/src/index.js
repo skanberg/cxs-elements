@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import { Div, Span, FlexRow, FlexColumn } from "../../src";
+import { Div, Span, FlexRow, FlexColumn, A } from "../../src";
 
 const Demo = () =>
   <div>
@@ -17,6 +17,9 @@ const Demo = () =>
       <div>First element in a flex column</div>
       <div>Second element</div>
     </FlexColumn>
+    <Div marginTop={20}>
+      This is a <A fontWeight="bold" href="https://github.com/" target="_blank">link</A>
+    </Div>
   </div>;
 
 render(<Demo />, document.querySelector("#demo"));
