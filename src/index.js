@@ -19,3 +19,18 @@ export const FlexColumn = ({ children, ...style }) =>
   <div className={cxs({ ...style, display: "flex", flexDirection: "column" })}>
     {children}
   </div>;
+
+export const Table = ({ children, ...style }) =>
+  <div className={cxs({ ...style, display: "table" })}>
+    {children}
+  </div>;
+
+export const TableRow = ({ children, ...style }) =>
+  <div className={cxs({ ...style, display: "table-row" })}>
+    {children}
+  </div>;
+
+export const TableCell = ({ children, ...style }) =>
+  <div className={cxs({ ...style, display: "table-cell" })}>
+    {children}
+  </div>;
