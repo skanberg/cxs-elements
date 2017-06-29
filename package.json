@@ -1,6 +1,6 @@
 {
   "name": "cxs-elements",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "cxs-elements React component",
   "main": "lib/index.js",
   "module": "es/index.js",

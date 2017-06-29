@@ -7,8 +7,8 @@ export const Div = ({ children, ...style }) =>
 export const Span = ({ children, ...style }) =>
   <span className={cxs(style)}>{children}</span>;
 
-export const A = ({ children, href, target, ...style }) =>
-  <a href={href} target={target} className={cxs(style)}>{children}</a>;
+export const A = ({ children, href, target, onClick, ...style }) =>
+  <a href={href} target={target} onClick={onClick} className={cxs(style)}>{children}</a>;
 
 export const FlexRow = ({ children, ...style }) =>
   <div className={cxs({ ...style, display: "flex", flexDirection: "row" })}>
