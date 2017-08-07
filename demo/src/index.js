@@ -21,8 +21,8 @@ const Demo = () =>
       <Span fontStyle="italic">spans</Span> inline
     </Div>
     <FlexRow marginTop={20}>
-      <Div fontColor="cyan" marginRight={20}>
-        This the first element in a flex row
+      <Div color="gray" marginRight={20}>
+        This is the first element in a flex row
       </Div>
       <Div>
         And <Span fontWeight="bold">another</Span> element
