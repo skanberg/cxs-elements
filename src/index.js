@@ -1,14 +1,20 @@
 import React from "react";
-import cxs from "cxs";
+import cxs from "cxs/atomic";
 
 export const Div = ({ children, ...style }) =>
-  <div className={cxs(style)}>{children}</div>;
+  <div className={cxs(style)}>
+    {children}
+  </div>;
 
 export const Span = ({ children, ...style }) =>
-  <span className={cxs(style)}>{children}</span>;
+  <span className={cxs(style)}>
+    {children}
+  </span>;
 
 export const A = ({ children, href, target, onClick, ...style }) =>
-  <a href={href} target={target} onClick={onClick} className={cxs(style)}>{children}</a>;
+  <a href={href} target={target} onClick={onClick} className={cxs(style)}>
+    {children}
+  </a>;
 
 export const FlexRow = ({ children, ...style }) =>
   <div className={cxs({ ...style, display: "flex", flexDirection: "row" })}>
