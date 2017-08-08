@@ -1,13 +1,22 @@
 import React from "react";
 import cxs from "cxs/atomic";
+import classNames from "classnames";
 
-export const Div = ({ children, ...style }) =>
-  <div className={cxs(style)}>
+const getClassName = (style, hover, focus, active) =>
+  classNames(
+    cxs(style),
+    hover && cxs({ ":hover": { ...hover } }),
+    focus && cxs({ ":focus": { ...focus } }),
+    active && cxs({ ":active": { ...active } }),
+  );
+
+export const Div = ({ children, hover, focus, active, ...style }) =>
+  <div className={getClassName(style, hover, focus, active)}>
     {children}
   </div>;
 
-export const Span = ({ children, ...style }) =>
-  <span className={cxs(style)}>
+export const Span = ({ children, hover, focus, active, ...style }) =>
+  <span className={getClassName(style, hover, focus, active)}>
     {children}
   </span>;
 

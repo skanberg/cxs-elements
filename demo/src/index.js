@@ -48,6 +48,9 @@ const Demo = () =>
         </TableCell>
       </TableRow>
     </Table>
+    <Div marginTop={20} hover={{ color: "red", cursor: "pointer" }} active={{ color: "cyan" }}>
+      Try to hover over me. Also try to click.
+    </Div>
   </div>;
 
 render(<Demo />, document.querySelector("#demo"));
