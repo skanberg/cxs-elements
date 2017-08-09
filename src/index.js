@@ -5,9 +5,9 @@ import classNames from "classnames";
 const getClassName = (style, hover, focus, active) =>
   classNames(
     cxs(style),
+    active && cxs({ ":active": { ...active } }),
     hover && cxs({ ":hover": { ...hover } }),
     focus && cxs({ ":focus": { ...focus } }),
-    active && cxs({ ":active": { ...active } }),
   );
 
 export const Div = ({ children, hover, focus, active, ...style }) =>
